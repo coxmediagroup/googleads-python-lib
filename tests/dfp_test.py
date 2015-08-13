@@ -20,7 +20,7 @@ __author__ = 'Joseph DiLallo'
 
 import StringIO
 import sys
-import unittest
+import unittest2 as unittest
 
 import mock
 import suds.transport

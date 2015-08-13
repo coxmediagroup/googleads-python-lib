@@ -18,7 +18,7 @@
 
 __author__ = 'Joseph DiLallo'
 
-import unittest
+import unittest2 as unittest
 import warnings
 
 import fake_filesystem

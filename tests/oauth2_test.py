@@ -19,7 +19,7 @@
 __author__ = 'Mark Saniscalchi'
 
 import datetime
-import unittest
+import unittest2 as unittest
 
 import httplib2
 import mock

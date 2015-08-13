@@ -22,7 +22,7 @@ __author__ = 'Joseph DiLallo'
 import io
 import sys
 import tempfile
-import unittest
+import unittest2 as unittest
 import urllib
 import urllib2
 
