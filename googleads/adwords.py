@@ -22,6 +22,7 @@ import sys
 import urllib
 import urllib2
 from xml.etree import ElementTree
+from xml.parsers.expat import ExpatError
 
 import suds.client
 import suds.mx.literal
@@ -831,7 +832,7 @@ class ReportDownloader(object):
             tree.find('./ApiError/trigger').text,
             tree.find('./ApiError/fieldPath').text,
             error.code, error, content)
-      except ElementTree.ParseError:
+      except (SyntaxError, ExpatError):
         pass
     return googleads.errors.AdWordsReportError(
         error.code, error, content)
