@@ -117,7 +117,7 @@ class DfpHeaderHandlerTest(unittest.TestCase):
     suds_client = mock.Mock()
     network_code = 'my network code is code'
     app_name = 'application name'
-    oauth_header = {'oauth', 'header'}
+    oauth_header = set(['oauth', 'header'])
     self.dfp_client.network_code = network_code
     self.dfp_client.application_name = app_name
     self.dfp_client.oauth2_client.CreateHttpHeader.return_value = oauth_header

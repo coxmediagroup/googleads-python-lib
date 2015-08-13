@@ -42,7 +42,7 @@ class DfaHeaderHandlerTest(unittest.TestCase):
     app_name_element.setText.return_value = app_name_element
     username = 'my username is name'
     app_name = 'application name'
-    oauth_header = {'oauth', 'header'}
+    oauth_header = set(['oauth', 'header'])
     self.dfa_client.username = username
     self.dfa_client.application_name = app_name
     self.dfa_client.oauth2_client.CreateHttpHeader.return_value = (
